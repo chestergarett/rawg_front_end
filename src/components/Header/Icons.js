@@ -2,6 +2,7 @@ import classes from './Icons.module.css';
 import {IoIosNotificationsOutline} from 'react-icons/io';
 import {RiAddFill} from 'react-icons/ri';
 import {BsThreeDots} from 'react-icons/bs';
+import {AiFillGithub} from 'react-icons/ai';
 
 const Icons = () => {
     return(
@@ -9,6 +10,7 @@ const Icons = () => {
             <IoIosNotificationsOutline size={30} className={classes.icons}/>
             <RiAddFill size={30} className={classes.icons}/>
             <BsThreeDots size={30} className={classes.icons}/>
+            <AiFillGithub size={30} className={classes.icons}/>
         </div>
     )
 }

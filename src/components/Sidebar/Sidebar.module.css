@@ -3,3 +3,22 @@
     flex-direction: column;
     margin-left: 1rem;
 }
+
+.header{
+    color: #1DA1F2
+}
+
+.tags{
+    height: 10rem;
+    overflow-y: scroll;
+}
+
+.platforms{
+    height: 10rem;
+    overflow-y: scroll;
+}
+
+.genres{
+    height: 15rem;
+    overflow-y: scroll;
+}

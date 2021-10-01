@@ -10,7 +10,8 @@ function App() {
   
   const [games, setGames] = useState([])
   const [genres, setGenres] = useState([])
-
+  const [platforms, setPlatforms] = useState([])
+  const [tags, setTags] = useState([])
 
   useEffect(
     () => {
@@ -33,6 +34,28 @@ function App() {
     }, []
   )
 
+  useEffect(
+    () => {
+        axios.get('https://chestergarett-rawg.herokuapp.com/api/games-platforms')
+        .then(res => {
+          setPlatforms(res.data.data.results)
+          console.log(res.data.data.results)
+        })
+        .catch(err => console.err)
+    }, []
+  )
+
+  useEffect(
+    () => {
+        axios.get('https://chestergarett-rawg.herokuapp.com/api/games-tags')
+        .then(res => {
+          setTags(res.data.data.results)
+          console.log(res.data.data.results)
+        })
+        .catch(err => console.err)
+    }, []
+  )
+
   return (
     <div className="main-layout">
       <div className="main-header">
@@ -40,7 +63,7 @@ function App() {
       </div>
       <div className="main-body">
         <div className="main-sidebar">
-          <Sidebar genres={genres}/>
+          <Sidebar genres={genres} platforms={platforms} tags={tags}/>
         </div>
         <div className="main-content">
           <GameIndex games={games}/>
