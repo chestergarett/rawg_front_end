@@ -1,0 +1,10 @@
+.root{
+    display: flex;
+    width: 80%;
+    padding: .5rem;
+    border-radius: 9999px;
+}
+
+.input{
+    width:100%;
+}

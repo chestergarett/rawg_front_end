@@ -1,0 +1,18 @@
+.main{
+    width: 90%;
+    height: 100%;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header{
+    font-weight: bold;
+    letter-spacing: 3px;
+    width: 80%;
+}
+
+.searchbar{
+    width: 100%;
+}
