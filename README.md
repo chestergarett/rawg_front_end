@@ -1,7 +1,5 @@
 # Check front end deployment here:
 
-### front_end
-
 https://chestergarett-durawg-0f82d5.netlify.app/
 
 - game list of your fave games
@@ -12,8 +10,6 @@ https://chestergarett-durawg-0f82d5.netlify.app/
 
 
 # Check back end deployment here:
-
-### back_end
 
 https://chestergarett-rawg.herokuapp.com/
 
