@@ -1,0 +1,82 @@
+.root{
+    display: flex;
+    padding: 1rem;
+    margin-top: .5rem;
+    justify-content: center;
+    width: 100%;
+}
+
+.card{
+    background-color: #202020 !important;
+    color: white;
+    width: 60%;
+}
+
+.main_picture{
+    height: 300px;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.content{
+    height: 50vh;
+    overflow-y: scroll;
+}
+
+.title{
+    margin: 0 !important;
+    padding: 0;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.subheader{
+    margin: 0;
+    padding: 0 !important;
+}
+
+.subheader_genres{
+    margin-bottom: .5rem;
+}
+
+.subheader_tags{
+    margin: 0;
+    padding: 0 !important;
+    display: flex;
+    margin-bottom: .5rem;
+}
+
+.label{
+    color: gray;
+}
+
+.developers{
+    align-items: center;
+}
+
+.sublabel{
+    color: gray;
+    font-size: 12px;
+}
+
+.description{
+    color: white;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.media{
+    margin-left: 1rem;
+    width: 30%;
+    background-color: #151515 !important;
+    height: 95vh;
+    overflow: scroll !important;
+}
+
+.mediaItem{
+    margin-bottom: 1rem;
+}

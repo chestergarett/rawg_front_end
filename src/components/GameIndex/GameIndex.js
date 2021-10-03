@@ -1,4 +1,5 @@
 import classes from './GameIndex.module.css'
+import {Link} from 'react-router-dom';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -12,23 +13,25 @@ const GameIndex = ({games}) => {
     <div className={classes.root}>
         {games ? games.map(g => {
             return (
-                <Card sx={{ width: 250, height: 350 }} key={g.id} className={classes.card}>
-                <CardMedia
-                    component="img"
-                    height="190"
-                    image={g.background_image}
-                    alt={g.name}
-                />
-                <CardContent>
-                    <Typography gutterBottom variant="h5" component="div" className={classes.name}>
-                    {g.name}
-                    </Typography>
-                </CardContent>
-                <CardActions>
-                    <Button size="small">{g.reviews_count} Reviews</Button>
-                    <Button size="small">{g.metacritic} Metacritic</Button>
-                </CardActions>
-            </Card>
+                <Link to={`/games/${g.slug}`}>
+                    <Card sx={{ width: 250, height: 350 }} key={g.id} className={classes.card}>
+                    <CardMedia
+                        component="img"
+                        height="190"
+                        image={g.background_image}
+                        alt={g.name}
+                    />
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="div" className={classes.name}>
+                        {g.name}
+                        </Typography>
+                    </CardContent>
+                    <CardActions>
+                        <Button size="small">{g.reviews_count} Reviews</Button>
+                        <Button size="small">{g.metacritic} Metacritic</Button>
+                    </CardActions>
+                </Card>
+            </Link>
             )
         }) : <></>}
     </div>        

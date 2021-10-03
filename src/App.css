@@ -10,7 +10,7 @@ body{
   display: grid;
   height: 100vh;
   width: 100%;
-  grid-template-rows: 10% 90%;
+  grid-template-rows: 15% 85%;
 }
 
 .main-body{
@@ -42,4 +42,9 @@ ul{
 
 li{
   margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
 }

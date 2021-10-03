@@ -11,7 +11,7 @@ const Sidebar = ({genres, platforms, tags}) => {
             <div>
                 <h2 className={classes.header}>Tags</h2>
                 <ul className={classes.tags}>
-                {tags ? tags.map(t => {
+                {tags ? tags.slice(0,5).map(t => {
                     return(
                         <ListItem alignItems="flex-start" key={t.id}>
                             <ListItemAvatar>
@@ -26,7 +26,7 @@ const Sidebar = ({genres, platforms, tags}) => {
             <div>
                 <h2 className={classes.header}>Platforms</h2>
                 <ul className={classes.platforms}>
-                {platforms ? platforms.map(p => {
+                {platforms ? platforms.slice(0,5).map(p => {
                     return(
                         <ListItem alignItems="flex-start" key={p.id}>
                             <ListItemAvatar>
@@ -41,7 +41,7 @@ const Sidebar = ({genres, platforms, tags}) => {
             <div>
                 <h2 className={classes.header}>Genres</h2>
                 <ul className={classes.genres}>
-                {genres ? genres.map(g => {
+                {genres ? genres.slice(0,5).map(g => {
                     return(
                         <ListItem alignItems="flex-start" key={g.id}>
                             <ListItemAvatar>
