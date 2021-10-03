@@ -10,7 +10,9 @@ const Icons = () => {
             <IoIosNotificationsOutline size={30} className={classes.icons}/>
             <RiAddFill size={30} className={classes.icons}/>
             <BsThreeDots size={30} className={classes.icons}/>
-            <AiFillGithub size={30} className={classes.icons}/>
+            <a href="https://github.com/chestergarett/rawg_front_end" target="_blank">
+                <AiFillGithub size={30} className={classes.icons}/>
+            </a>
         </div>
     )
 }
