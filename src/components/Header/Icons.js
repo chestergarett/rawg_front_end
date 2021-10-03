@@ -1,17 +1,17 @@
 import classes from './Icons.module.css';
-import {IoIosNotificationsOutline} from 'react-icons/io';
-import {RiAddFill} from 'react-icons/ri';
-import {BsThreeDots} from 'react-icons/bs';
-import {AiFillGithub} from 'react-icons/ai';
+import NotificationsIcon from '@mui/icons-material/Notifications';
+import AddIcon from '@mui/icons-material/Add';
+import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Icons = () => {
     return(
         <div className={classes.root}>
-            <IoIosNotificationsOutline size={30} className={classes.icons}/>
-            <RiAddFill size={30} className={classes.icons}/>
-            <BsThreeDots size={30} className={classes.icons}/>
+            <NotificationsIcon className={classes.icons}/>
+            <AddIcon className={classes.icons}/>
+            <MoreHorizIcon className={classes.icons}/>
             <a href="https://github.com/chestergarett/rawg_front_end" target="_blank" rel="noreferrer">
-                <AiFillGithub size={30} className={classes.icons}/>
+                <GitHubIcon className={classes.icons}/>
             </a>
         </div>
     )
